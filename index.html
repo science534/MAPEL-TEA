@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buku IPA Kelas 7</title>
+
+<style>
+body{
+    margin:0;
+    background:#f4f1ea;
+    font-family: "Times New Roman", serif;
+}
+
+.book{
+    width:800px;
+    margin:auto;
+    padding:40px;
+    background:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.page{
+    page-break-after: always;
+    margin-bottom:50px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h2{
+    margin-top:30px;
+    border-bottom:2px solid black;
+    padding-bottom:5px;
+}
+
+p{
+    text-align:justify;
+    line-height:1.7;
+}
+
+img{
+    display:block;
+    margin:20px auto;
+    max-width:80%;
+}
+
+.soal{
+    margin-top:20px;
+    padding:15px;
+    background:#f0f0f0;
+    border-left:5px solid #333;
+}
+
+.page-number{
+    text-align:right;
+    font-size:14px;
+    margin-top:40px;
+    color:gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+<!-- HALAMAN SAMPUL -->
+<div class="page">
+<h1>BUKU IPA</h1>
+<h1>KELAS 7</h1>
+<p style="text-align:center;">Disusun untuk Pembelajaran Sekolah</p>
+<div class="page-number">Halaman 1</div>
+</div>
+
+<!-- BAB 1 -->
+<div class="page">
+<h2>BAB 1 - Sistem Tata Surya</h2>
+
+<p>
+Tata surya adalah kumpulan benda langit yang terdiri dari Matahari sebagai pusat dan planet-planet yang mengelilinginya.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg">
+
+<p>
+Planet-planet dalam tata surya antara lain Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan Neptunus.
+</p>
+
+<div class="soal">
+<b>Latihan Soal:</b>
+<ol>
+<li>Sebutkan 3 planet terdekat dari Matahari!</li>
+<li>Apa fungsi Matahari dalam tata surya?</li>
+</ol>
+</div>
+
+<div class="page-number">Halaman 2</div>
+</div>
+
+<!-- BAB 2 -->
+<div class="page">
+<h2>BAB 2 - Ekosistem</h2>
+
+<p>
+Ekosistem adalah hubungan timbal balik antara makhluk hidup dengan lingkungannya.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Freshwater_ecosystem.jpg">
+
+<p>
+Komponen ekosistem terdiri dari komponen biotik dan abiotik.
+</p>
+
+<div class="soal">
+<b>Latihan Soal:</b>
+<ol>
+<li>Apa perbedaan biotik dan abiotik?</li>
+<li>Berikan contoh ekosistem darat!</li>
+</ol>
+</div>
+
+<div class="page-number">Halaman 20</div>
+</div>
+
+<!-- BAB 3 -->
+<div class="page">
+<h2>BAB 3 - Gaya dan Gerak</h2>
+
+<p>
+Gaya adalah tarikan atau dorongan yang dapat mempengaruhi bentuk dan gerak suatu benda.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Forces_diagram.svg">
+
+<p>
+Gerak terjadi ketika suatu benda berpindah posisi terhadap titik acuan.
+</p>
+
+<div class="soal">
+<b>Latihan Soal:</b>
+<ol>
+<li>Apa yang dimaksud dengan gaya?</li>
+<li>Sebutkan contoh gaya dalam kehidupan sehari-hari!</li>
+</ol>
+</div>
+
+<div class="page-number">Halaman 40</div>
+</div>
+
+<!-- BAB 4 -->
+<div class="page">
+<h2>BAB 4 - Struktur Bumi</h2>
+
+<p>
+Bumi memiliki beberapa lapisan yaitu kerak bumi, mantel, dan inti bumi.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Earth_layers.jpg">
+
+<p>
+Lapisan inti bumi memiliki suhu yang sangat tinggi.
+</p>
+
+<div class="soal">
+<b>Latihan Soal:</b>
+<ol>
+<li>Sebutkan lapisan bumi dari luar ke dalam!</li>
+<li>Bagaimana suhu inti bumi?</li>
+</ol>
+</div>
+
+<div class="page-number">Halaman 60</div>
+</div>
+
+<!-- BAB 5 -->
+<div class="page">
+<h2>BAB 5 - Energi dan Perubahannya</h2>
+
+<p>
+Energi adalah kemampuan untuk melakukan usaha.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Wind_turbine_energy.jpg">
+
+<p>
+Energi dapat berubah bentuk, misalnya energi listrik menjadi energi cahaya.
+</p>
+
+<div class="soal">
+<b>Latihan Soal:</b>
+<ol>
+<li>Apa yang dimaksud energi?</li>
+<li>Berikan contoh perubahan energi!</li>
+</ol>
+</div>
+
+<div class="page-number">Halaman 80</div>
+</div>
+
+<!-- HALAMAN TAMBAHAN SAMPAI 100 -->
+<script>
+let book = document.querySelector(".book");
+for(let i=81;i<=100;i++){
+    let page = document.createElement("div");
+    page.className="page";
+    page.innerHTML = `
+    <h2>Halaman Materi Tambahan</h2>
+    <p>Halaman ini dapat diisi materi tambahan atau rangkuman pembelajaran.</p>
+    <div class="page-number">Halaman ${i}</div>
+    `;
+    book.appendChild(page);
+}
+</script>
+
+</div>
+
+</body>
+  </html>
